@@ -53,18 +53,23 @@ Ensure you have Python installed on your system.
 ```bash
 git clone [https://github.com/tanishq-ch/CaptchaGames.git](https://github.com/tanishq-ch/CaptchaGames.git)
 cd CaptchaGames
+```
 
-2. Install Dependencies
-### Install the required libraries using pip
+### 2. Install Dependencies
 
-Bash
-
+```bash
 pip install -r requirements.txt
-3. Run the Application
-Bash
+```
 
+### 3. Run the Application
+
+```bash
 python main.py
-🎮 How to Play
+
+```
+
+### 🎮 How to Play
+
 Initiate: Click the "INITIATE" button on the right control panel to start the security protocol.
 
 Solve: The live video on the left will scramble. Click and drag the grid blocks to swap them.
