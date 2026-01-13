@@ -86,3 +86,35 @@ Live-Jigsaw-Captcha/
 ├── requirements.txt     # Dependency list
 ├── README.md            # Documentation
 └── assets/              # (Optional) Fonts and UI assets
+
+``` 
+
+## 🧠 Technical Highlights (Code Logic)
+
+This project demonstrates efficient handling of video buffers. Instead of saving static images, the engine:
+
+* **Captures** a raw frame from the webcam.
+* **Mirrors** the frame for natural UX.
+* **Rotates** the matrix (NumPy) to align OpenCV coordinates with Pygame surface coordinates.
+* **Slices** the array dynamically based on the current grid permutation.
+* **Renders** only the visible slices to the GPU buffer.
+
+---
+
+## 🔮 Future Roadmap
+
+- [ ] **Web Port:** Rewriting the engine in **p5.js** for browser-based integration.
+- [ ] **AI Validation:** Implementing a background Face Detection model to ensure a face is actually present during the puzzle.
+- [ ] **Audio Feedback:** Adding futuristic sound effects for tile swaps and verification success.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have ideas for better UI or optimization:
+
+1.  **Fork** the Project
+2.  Create your **Feature Branch** (`git checkout -b feature/AmazingFeature`)
+3.  **Commit** your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  **Push** to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a **Pull Request**
