@@ -54,4 +54,63 @@ Ensure you have Python installed on your system.
 git clone [https://github.com/tanishq-ch/CaptchaGames.git](https://github.com/tanishq-ch/CaptchaGames.git)
 cd CaptchaGames
 
+2. Install Dependencies
+### Install the required libraries using pip
 
+Bash
+
+pip install -r requirements.txt
+3. Run the Application
+Bash
+
+python main.py
+🎮 How to Play
+Initiate: Click the "INITIATE" button on the right control panel to start the security protocol.
+
+Solve: The live video on the left will scramble. Click and drag the grid blocks to swap them.
+
+Objective: Rearrange the blocks to form the correct image of yourself.
+
+Timer: You have 60 seconds to complete the verification before the session expires.
+
+📂 Project Structure
+Plaintext
+
+Live-Jigsaw-Captcha/
+│
+├── main.py              # Core application logic (CV pipeline + Game Loop)
+├── requirements.txt     # Dependency list
+├── README.md            # Documentation
+└── assets/              # (Optional) Fonts and UI assets
+🧠 Technical Highlights (Code Logic)
+### This project demonstrates efficient handling of video buffers. Instead of saving static images, the engine
+
+Captures a raw frame from the webcam.
+
+Mirrors the frame for natural UX.
+
+Rotates the matrix (NumPy) to align OpenCV coordinates with Pygame surface coordinates.
+
+Slices the array dynamically based on the current grid permutation.
+
+Renders only the visible slices to the GPU buffer.
+
+🔮 Future Roadmap
+[ ] Web Port: Rewriting the engine in p5.js for browser-based integration.
+
+[ ] AI Validation: Implementing a background Face Detection model to ensure a face is actually present during the puzzle.
+
+[ ] Audio Feedback: Adding futuristic sound effects for tile swaps and verification success.
+
+🤝 Contributing
+### Contributions are welcome! If you have ideas for better UI or optimization
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
