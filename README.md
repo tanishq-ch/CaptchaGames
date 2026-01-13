@@ -104,6 +104,7 @@ This project demonstrates efficient handling of video buffers. Instead of saving
 ## 🔮 Future Roadmap
 
 - [ ] **Web Port:** Rewriting the engine in **p5.js** for browser-based integration.
+- [ ] **Hand Gestures:** Enabling movement of tiles via hand tracking (MediaPipe) to drag grid blocks without a mouse.
 - [ ] **AI Validation:** Implementing a background Face Detection model to ensure a face is actually present during the puzzle.
 - [ ] **Audio Feedback:** Adding futuristic sound effects for tile swaps and verification success.
 
